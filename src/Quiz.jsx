@@ -7,13 +7,9 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   font-family: 'Arial', sans-serif;
-  align-items: center;
   justify-content: center;
-  margin-top: 50px;
-  margin bottom: 50px;
-
-
-
+  margin: 50px auto; 
+  padding: 0 20px; 
 `;
 
 const BackgroundImage = styled.div`
@@ -33,11 +29,10 @@ const QuestionCard = styled.div`
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  width: 100%; 
+  width: 90%; 
   max-width: 800px; 
   background-color: #F5F5DC;
   text-align: center;
-  max height: 500px;
 `;
 
 const AnswerCard = styled.div`
@@ -127,17 +122,16 @@ const Button = styled.button`
 // `;
 
 const Image = styled.img`
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+  width: 100%; 
+  max-width: 600px; 
+  height: auto;     
+  margin: 20px auto; 
   border-radius: 10px;
-  margin-bottom: 20px;
 `;
 
-
 const Comment = styled.p`
-  font-size: 28px;;
-  margin-bottom: 7px;
+  font-size: 1.2rem; 
+  margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
   font-family: 'Arial', sans-serif;
@@ -213,7 +207,7 @@ const Quiz = () => {
     } else if (score >= 15 && score < 20) {
         setComment(FinalScore[3].comment);
         setImage(FinalScore[3].image);
-    } else if (score == 20) {
+    } else if (score === 20) {
         setComment(FinalScore[4].comment);
         setImage(FinalScore[4].image);
     }
