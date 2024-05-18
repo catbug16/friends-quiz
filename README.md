@@ -21,7 +21,7 @@ A simple quiz application based on the TV show "Friends".
 
 ## Credits
 
-- Done By 🌞
+- Done By Dua Alhinai
 
 ## License
 
